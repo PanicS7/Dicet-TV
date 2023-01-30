@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+// Components
+import Nav from "./components/Nav.js"
 
 function App() {
  return (
-   "React app"
-   )
+    <div>
+      <Nav/>
+    </div>
+  )
 }
 
 
