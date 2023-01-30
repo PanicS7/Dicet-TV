@@ -9,15 +9,15 @@ function Nav() {
   function handleMenuClick () {
     setShowNav((prevState) => !prevState)
   } 
-  
+   
   return (
-    <div>
+    <div style={nav_styles.common}>
       <header style={nav_styles.navBar}>
         <img src="./IMAGES/logo.png" alt="DicetTV"/>
         <i onClick={handleMenuClick} className="fa fa-bars" aria-hidden="true"></i>
       </header>
       
-      <nav style={showNav ? nav_styles.show : nav_styles.nav}>
+      <nav style={showNav ? nav_styles.show : nav_styles.hide}>
         <ul>
           <li>Home</li>
           <li>About</li>
